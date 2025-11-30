@@ -128,11 +128,11 @@ def separate_data(path, path_save, df, save=True):
 
 if __name__ == '__main__':
     
-    pth = r'D:/NLP final project/unused_data.csv'
-    pth_all_csv = r'D:/NLP final project/balanced_data_new_clean.csv'
-    pth_dst = r'D:/NLP final project/used_np_false'
-    pth_src = r'D:/NLP final project\songs\whisper\whisper_dataset_np'
-    pth_basic =r'D:/NLP final project'
+    # pth = r'D:/NLP final project/unused_data.csv'
+    # pth_all_csv = r'D:/NLP final project/balanced_data_new_clean.csv'
+    # pth_dst = r'D:/NLP final project/used_np_false'
+    # pth_src = r'D:/NLP final project\songs\whisper\whisper_dataset_np'
+    # pth_basic =r'D:/NLP final project'
     df = pd.read_csv(pth)
     data = []
     for i, x in enumerate(df['billboard']):
@@ -152,5 +152,6 @@ if __name__ == '__main__':
     df_all_new = df_all_new.iloc[:,1:]
     
     df_all_new.to_csv(os.path.join(pth_basic, 'df_final.csv'), index=False)
+
 
  
